@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "fanke-icons": "^1.0.6",
     "vue": "^3.3.11"
   },
   "devDependencies": {
