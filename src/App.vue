@@ -53,9 +53,9 @@
       </div>
     </div>
 
-    <div class="message" :style="{ top: visible ? '80px' : '-180px', transition: visible ? 'all .5s ease' : '' }">
+    <div class="message" :style="{ top: visible ? '60px' : '-180px', transition: visible ? 'all .5s ease' : '' }">
       <checkCircleFilled />
-      <em>{{ msg }}</em>
+      <em class="msg-desc">{{ msg }}</em>
       <em>复制成功</em>
     </div>
 
@@ -534,6 +534,10 @@ const copy = (text) => {
 
   .container .icon-list-hd {
     padding: 5px;
+  }
+
+  .message .msg-desc {
+    display: none;
   }
 }
 
