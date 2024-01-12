@@ -27,11 +27,11 @@
       <div class="icon-style">
         <span :class="{ 'active': iconType == 1 }" @click="changeTab(1)">
           <em class="outlined"></em>
-          线框风格
+          线框<i>风格</i>
         </span>
         <span :class="{ 'active': iconType == 2 }" @click="changeTab(2)">
           <em class="filled"></em>
-          实底风格
+          实底<i>风格</i>
         </span>
       </div>
       <div class="search">
@@ -317,6 +317,7 @@ const copy = (text) => {
 
 .container .icon-list-hd {
   display: flex;
+  align-items: center;
   height: 56px;
   padding: 8px;
   transition: all .5s ease;
@@ -521,6 +522,18 @@ const copy = (text) => {
 
   .icon-list-items ul li .fankeicon {
     font-size: 24px;
+  }
+
+  .container .icon-style span i {
+    display: none;
+  }
+
+  .container .search {
+    margin-left: 8px;
+  }
+
+  .container .icon-list-hd {
+    padding: 5px;
   }
 }
 
